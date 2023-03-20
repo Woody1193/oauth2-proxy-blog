@@ -2,7 +2,7 @@ services:
   - type: pserv
     name: sixamolp-frontend
     env: node
-    plan: standard
+    plan: starter
     repo: https://github.com/xefino/sixamolp-frontend
     branch: develop
     region: singapore

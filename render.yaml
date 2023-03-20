@@ -5,8 +5,8 @@ services:
     plan: standard
     repo: https://github.com/xefino/sixamolp-frontend/tree/develop
     region: singapore
-    buildCommand: yarn
-    startCommand: node app.js
+    buildCommand: yarn; yarn build:dev
+    startCommand: yarn start
     envVars:
       - key: REVALIDATE
         value: 60

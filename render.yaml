@@ -3,7 +3,8 @@ services:
     name: sixamolp-frontend
     env: node
     plan: standard
-    repo: https://github.com/xefino/sixamolp-frontend/tree/develop
+    repo: https://github.com/xefino/sixamolp-frontend
+    branch: develop
     region: singapore
     buildCommand: yarn; yarn build:dev
     startCommand: yarn start

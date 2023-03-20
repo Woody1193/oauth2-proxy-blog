@@ -4,12 +4,14 @@ services:
     env: node
     plan: starter
     repo: https://github.com/render-examples/express-hello-world
+    region: singapore
     buildCommand: yarn
     startCommand: node app.js
   - type: web
     name: oauth2-proxy
     env: docker
     plan: free
+    region: singapore
     envVars:
       - key: UPSTREAM
         fromService:

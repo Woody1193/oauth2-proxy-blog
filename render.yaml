@@ -36,3 +36,5 @@ services:
         value: '*'
       - key: OAUTH2_PROXY_HTTP_ADDRESS
         value: ":10000"
+      - key: OAUTH2_PROXY_GITHUB_ORG
+        value: "xefino"

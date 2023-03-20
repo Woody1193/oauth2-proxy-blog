@@ -1,16 +1,21 @@
 services:
   - type: pserv
-    name: private-service
+    name: sixamolp-frontend
     env: node
-    plan: starter
-    repo: https://github.com/render-examples/express-hello-world
+    plan: standard
+    repo: https://github.com/xefino/sixamolp-frontend/tree/develop
     region: singapore
     buildCommand: yarn
     startCommand: node app.js
+    envVars:
+      - key: REVALIDATE
+        value: 60
+      - key: STRAPI_URL
+        sync: false
   - type: web
     name: oauth2-proxy
     env: docker
-    plan: free
+    plan: starter
     region: singapore
     envVars:
       - key: UPSTREAM

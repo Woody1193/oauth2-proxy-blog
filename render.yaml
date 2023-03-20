@@ -38,3 +38,5 @@ services:
         value: ":10000"
       - key: OAUTH2_PROXY_GITHUB_ORG
         value: "xefino"
+      - key: OAUTH2_PROXY_GITHUB_USER
+        value: "sixamolp-test"

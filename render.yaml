@@ -21,7 +21,7 @@ services:
     envVars:
       - key: UPSTREAM
         fromService:
-          name: private-service
+          name: sixamolp-frontend
           type: pserv
           property: hostport
       - key: OAUTH2_PROXY_PROVIDER
